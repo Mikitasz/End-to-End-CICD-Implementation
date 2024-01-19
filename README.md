@@ -13,4 +13,3 @@ The plan is to  and.
   - Describe it in more detail
   - Make https
   - Make domain name such as mikitasz.xyz
-* Item Alt      # alternate bullet syntax
