@@ -1,5 +1,5 @@
 # Jenkins pipeline for portfolio web site
-## Table of Contents (Optional)
+## Table of Contents
 - [Description](#description)
 - [Plans](#lans)
 
