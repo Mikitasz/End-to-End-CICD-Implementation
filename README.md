@@ -8,6 +8,7 @@ This project was created to create a simple CI/CD pipeline in Jenkins. The devel
 The architecture diagram looks something like this
 
 ![Untitled Diagram drawio (1)](https://github.com/Mikitasz/Portfolio-Public/assets/94795099/023691a5-7d58-4a19-b591-706a3b10256d)
+![Uploading Untitled Diagram.drawio (2).png…]()
 
 ## Plans
 - Describe it in more detail
