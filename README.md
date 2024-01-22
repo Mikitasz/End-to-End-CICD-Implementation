@@ -16,7 +16,7 @@ The architecture diagram looks something like this:
 
 
 ## Plans
-- Change architecture to save costs
+- Change architecture to save costs, which means for me to rebuild it for ec2
 - Make https
 - Make domain name such as mikitasz.xyz
 
