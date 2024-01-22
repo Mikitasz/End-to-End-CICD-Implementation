@@ -11,7 +11,8 @@ In this simple pipeline development project, Jenkins is triggered every time the
 
 The architecture diagram looks something like this:
 
-![Untitled Diagram drawio (3)](https://github.com/Mikitasz/Portfolio-Public/assets/94795099/4801d6ce-2485-4918-b517-db095d09ca2d)
+![Untitled Diagram drawio (4)](https://github.com/Mikitasz/Portfolio-Public/assets/94795099/36d75179-a222-43a6-bb6d-153c88963eb8)
+
 
 ## Plans
 - Change architecture to save costs
