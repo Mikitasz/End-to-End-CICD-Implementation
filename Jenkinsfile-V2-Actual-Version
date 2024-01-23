@@ -1,0 +1,65 @@
+pipeline {
+	agent any
+	environment {
+
+        DOCKERHUB_CREDENTIALS= credentials('Dockerhub')
+
+    }
+
+	stages {
+		stage('Fetch code'){
+			steps{
+				git branch: 'main', url: 'git@github.com:Mikitasz/Portfolio-CV.git'
+				}
+			}
+
+	    stage('Build App Image') {
+            steps {
+
+	                sh 'docker build -t mikitasz/portfolio:$BUILD_NUMBER .'
+
+            }
+        }
+
+
+        stage('Login to DOckerhub') {
+            steps{
+                sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
+
+      }
+        }
+
+         stage('Push App Image') {
+           steps{
+	        sh 'docker push mikitasz/portfolio:$BUILD_NUMBER'
+            }
+        }
+        stage("DEPLOY CONTAINER"){
+        steps {
+            script {
+                    sh """
+                    #!/bin/bash
+                    ls -l
+                    pwd
+
+                    whoami
+                    ssh -i /home/ubuntu/Portfolio.pem ubuntu@54.210.70.160 << EOF
+                    docker stop web1
+                    docker rm web1
+                    docker run -d -p 80:8000 --name web1 mikitasz/portfolio:$BUILD_NUMBER
+
+                    exit 0
+                    << EOF
+                    """
+                }
+        }
+    }
+	}
+	post{
+    always {
+        sh 'docker logout'
+        }
+        }
+}
+
+
