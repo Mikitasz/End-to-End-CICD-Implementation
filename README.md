@@ -11,12 +11,12 @@ Also the main repository is private as it uses private keys.
 In this simple pipeline development project, Jenkins is triggered every time the code enters the git hub.
 
 The architecture diagram looks something like this:
-
+### Architecture using ECS, ECR, Fargate
 ![Untitled Diagram drawio (4)](https://github.com/Mikitasz/Portfolio-Public/assets/94795099/36d75179-a222-43a6-bb6d-153c88963eb8)
 
 
 ## Plans
-- Change architecture to save costs, which means for me to rebuild it for ec2
+
 - Make https
 - Make domain name such as mikitasz.xyz
 
