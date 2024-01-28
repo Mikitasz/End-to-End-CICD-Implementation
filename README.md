@@ -14,6 +14,8 @@ The architecture diagram looks something like this:
 ### Architecture using ECS, ECR, Fargate
 ![Untitled Diagram drawio (4)](https://github.com/Mikitasz/Portfolio-Public/assets/94795099/36d75179-a222-43a6-bb6d-153c88963eb8)
 
+### Architecture using Docker Hub, EC2
+![ec2-prot drawio](https://github.com/Mikitasz/End-to-End-CICD-Implementation-Jenkins/assets/94795099/9446a1a8-8b70-48a1-828e-3fe780bfe6c2)
 
 ## Plans
 
