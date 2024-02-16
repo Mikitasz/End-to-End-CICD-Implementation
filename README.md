@@ -1,7 +1,6 @@
 # Jenkins CI/CD
 ## Table of Contents
 - [Description](#description)
-- [Plans](#lans)
 
 ## Description
 This project aims to establish a streamlined CI/CD pipeline using Jenkins for the development and deployment of a personal portfolio website. The live version of the website is accessible at http://profilelbs-253728117.us-east-1.elb.amazonaws.com/.
@@ -16,8 +15,4 @@ The architecture diagram is as follows:
 ### Architecture using Docker Hub, EC2
 ![ec2-prot drawio](https://github.com/Mikitasz/End-to-End-CICD-Implementation-Jenkins/assets/94795099/9446a1a8-8b70-48a1-828e-3fe780bfe6c2)
 
-## Plans
-
-- Make https
-- Make domain name such as mikitasz.xyz
 
