@@ -1,16 +1,15 @@
-# Jenkins pipeline for portfolio web site
+# Jenkins CI/CD
 ## Table of Contents
 - [Description](#description)
 - [Plans](#lans)
 
 ## Description
-This project was created to create a simple CI/CD pipeline in Jenkins. The development object is the CV site itself. This site can be accessed at http://profilelbs-253728117.us-east-1.elb.amazonaws.com/. The site is up and running on weekdays and during business hours for now. This is implemented to save money.
+This project aims to establish a streamlined CI/CD pipeline using Jenkins for the development and deployment of a personal portfolio website. The live version of the website is accessible at http://profilelbs-253728117.us-east-1.elb.amazonaws.com/.
+The main repository is set to private due to the utilization of private keys for security purposes.
 
-Also the main repository is private as it uses private keys. 
+In this straightforward pipeline development initiative, Jenkins is configured to trigger automatically upon code changes in the GitHub repository.
 
-In this simple pipeline development project, Jenkins is triggered every time the code enters the git hub.
-
-The architecture diagram looks something like this:
+The architecture diagram is as follows:
 ### Architecture using ECS, ECR, Fargate
 ![Untitled Diagram drawio (4)](https://github.com/Mikitasz/Portfolio-Public/assets/94795099/36d75179-a222-43a6-bb6d-153c88963eb8)
 
